@@ -120,6 +120,19 @@ section p {
     grid-gap: 10px; /* Adjust the gap as needed */
     /* Other styles for .logos on mobile */
   }
+
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .img-box-section {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    transition: 0.5s;
+  }
 }
 
 .pricing-box {
