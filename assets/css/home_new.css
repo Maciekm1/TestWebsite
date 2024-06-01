@@ -103,6 +103,23 @@ section p {
   section h2 {
     font-size: 2rem;
   }
+  .graybox {
+    background-color: #eaeaea;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  
+  .whitebox {
+    background-color: #FFFFFF;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2x2 grid on mobile */
+    grid-gap: 10px; /* Adjust the gap as needed */
+    /* Other styles for .logos on mobile */
+  }
 }
 
 .pricing-box {
