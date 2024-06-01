@@ -21,9 +21,7 @@ author: Jaroslaw Zaweracz
 
 navbar-links:
   About: "#aboutme"
-  Schedule a service:
-    - Beautiful Jekyll: "#beautiful-jekyll"
-    - Learn markdown: "#learn-markdown"
+  Schedule a service: "#services"
   Pricing: "#pricing"
   Reviews: "#reviews"
   Contact us: "#contactus"

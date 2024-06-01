@@ -2,9 +2,10 @@
  section {
   display: grid;
   place-items: center;
-  align-content: center;
+  align-content: start;
   min-height: 100vh;
   color: #404040;
+  padding-top: 45px;
 }
 
 .graybox {
@@ -13,6 +14,11 @@
   padding-right:60px;
 }
 
+.whitebox {
+  background-color: #FFFFFF;
+  padding-left:60px;
+  padding-right:60px;
+}
 /* About Section */
 #aboutme {
   text-align: center; /* Center the text */
@@ -20,10 +26,7 @@
 
 /* Services Section */
 #services {
-  background-color: #FFFFFF; /* A bright blue background */
   text-align: center; /* Align text to the left */
-  padding-left:60px;
-  padding-right:60px;
 }
 
 /* Pricing Section */
@@ -33,10 +36,7 @@
 
 /* Reviews Section */
 #reviews {
-  background-color: #FFFFFF; /* A teal background for reviews */
   text-align: center; /* Justify the text */
-  padding-left:60px;
-  padding-right:60px;
 }
 
 /* Gallery Section */
@@ -46,10 +46,7 @@
 
 /* FAQ Section */
 #faq {
-  background-color: #FFFFFF; /* A navy background for FAQs */
   text-align: center; /* Align text to the left */
-  padding-left:60px;
-  padding-right:60px;
 }
 
 /* Contact Section */
@@ -82,6 +79,22 @@ section p {
   transform: translateX(0);
 }
 
+.logos{
+  display: flex;
+}
+
+.logo:nth-child(2){
+  transition-delay: 150ms;
+}
+
+.logo:nth-child(3){
+  transition-delay: 300ms;
+}
+
+.logo:nth-child(4){
+  transition-delay: 450ms;
+}
+
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   section {
@@ -91,5 +104,57 @@ section p {
     font-size: 2rem;
   }
 }
+
+.pricing-box {
+	padding-top: 3%;
+  min-width: 70vw;
+}
+.single-pricing ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.single-pricing ul li {
+	line-height: 50px;
+	color: #fff;
+}
+.single-pricing {
+	background: linear-gradient(45deg, #404040, #353535);
+	padding: 40px;
+	margin-bottom: 30px;
+}
+.single-pricing button {
+	background: #262626;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.pricing-title {
+	font-size: 42px;
+	font-weight: 900;
+	text-align: center;
+	cursor: pointer;
+	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 0.02em;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-repeat: no-repeat;
+	-webkit-transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+	transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+}
+
+.box {
+	background-image: linear-gradient(135deg, white 0%, white 50%, transparent 50.1%);
+	background-size: 0% 100%;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+.single-pricing:hover .box {
+	background-size: 220% 100%;
+}
+
 
 
